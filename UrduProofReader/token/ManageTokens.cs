@@ -37,6 +37,15 @@ namespace UrduProofReader.token
 
         private void ManageTokens_Load(object sender, EventArgs e)
         {
+            dataGridView1.AutoGenerateColumns = false;
+
+            dataGridView1.Columns[0].Name = "Column1";
+            dataGridView1.Columns[0].DataPropertyName = "Column1";
+            dataGridView1.Columns[1].Name = "Column2";
+            dataGridView1.Columns[1].DataPropertyName = "Column2";
+            dataGridView1.Columns[2].Name = "Column3";
+            dataGridView1.Columns[2].DataPropertyName = "Column3";
+
             dataGridView1.DataSource = TokenDataSet.Instance.DataTable;
         }
 

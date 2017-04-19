@@ -34,18 +34,29 @@ namespace UrduProofReader.classes
             }
         }
 
-        public bool save()
+        public bool save(string text)
+        {
+            if (text != null && text.Length > 0)
+            {
+                File.AppendAllText(Utils._basePath + "\\" + "tokenfile.txt", "\r\n"+ text);
+                return true;
+            }
+
+            return false;
+        }
+
+            public bool save()
         {
             StringBuilder allTokens = new StringBuilder();
             int i = 0;
             foreach (DataRow row in _table.Rows)
             {
-                if (row[0] == null || row[1] == null || string.IsNullOrEmpty(row[2] + ""))
+                if (row[0] == null || row[1] == null)
                 {
                     return false;
                 }
 
-                if (row[2].Equals("Y"))
+                if (!string.IsNullOrEmpty(row[2] + "") && !row[2].Equals("False"))
                 {
                     allTokens.Append("E،" + row[0] + "،" + row[1]);
                 }
@@ -71,11 +82,11 @@ namespace UrduProofReader.classes
             {
                 _table = new DataTable();
 
-                DataColumn column = new DataColumn("تلاش کیجیے");
+                DataColumn column = new DataColumn("Column1");
                 _table.Columns.Add(column);
-                column = new DataColumn("تبدیل کیجیے");
+                column = new DataColumn("Column2");
                 _table.Columns.Add(column);
-                column = new DataColumn("ریگولر ایکسپریشن");
+                column = new DataColumn("Column3");
                 _table.Columns.Add(column);
             }
 
@@ -99,14 +110,14 @@ namespace UrduProofReader.classes
                     // Expression
                     myRow[0] = tokens[1];
                     myRow[1] = tokens[2];
-                    myRow[2] = "Y";
+                    myRow[2] = true;
                 }
                 else
                 {
                     // Not expression
                     myRow[0] = tokens[0];
                     myRow[1] = tokens[1];
-                    myRow[2] = "N";
+                    myRow[2] = false;
                 }
 
                 _table.Rows.Add(myRow);

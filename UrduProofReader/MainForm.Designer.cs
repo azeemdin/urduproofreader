@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.uiStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -55,10 +56,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.uiUpdatedText = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uiGetTextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.uiGetTextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -210,10 +214,6 @@
             this.uiExitToolButton.Text = "بند کیجیے";
             this.uiExitToolButton.Click += new System.EventHandler(this.uiExitToolButton_Click);
             // 
-            // uiTokenFileDialogue
-            // 
-            this.uiTokenFileDialogue.FileName = "openFileDialog1";
-            // 
             // uiRegex
             // 
             this.uiRegex.AutoSize = true;
@@ -239,6 +239,7 @@
             // 
             // uiTextToProcess
             // 
+            this.uiTextToProcess.ContextMenuStrip = this.uiGetTextMenu;
             this.uiTextToProcess.Location = new System.Drawing.Point(12, 51);
             this.uiTextToProcess.Name = "uiTextToProcess";
             this.uiTextToProcess.Size = new System.Drawing.Size(798, 133);
@@ -278,6 +279,21 @@
             this.panel2.Size = new System.Drawing.Size(822, 392);
             this.panel2.TabIndex = 8;
             // 
+            // uiGetTextMenu
+            // 
+            this.uiGetTextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.uiGetTextMenu.Name = "uiGetText";
+            this.uiGetTextMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.uiGetTextMenu.Size = new System.Drawing.Size(174, 48);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.toolStripMenuItem1.Text = "نیا لفظ شامل کیجیے";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +321,7 @@
             this.toolStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.uiGetTextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,5 +355,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox uiUpdatedText;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ContextMenuStrip uiGetTextMenu;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

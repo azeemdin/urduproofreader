@@ -142,6 +142,7 @@ namespace UrduProofReader.classes
             {
                 string[] tokens = line.Split(new char[] { '،' });
                 List<string> list = new List<string>();
+
                 if (tokens.Length == 3)
                 {
                     list.Add("E");
@@ -173,6 +174,9 @@ namespace UrduProofReader.classes
             UpdatedText = UpdatedText.Replace(" ،", "،");
             UpdatedText = UpdatedText.Replace("،", "، ");
 
+            UpdatedText = UpdatedText.Replace(" ۔", "۔");
+            UpdatedText = UpdatedText.Replace("۔", "۔ ");
+
             foreach (List<string> line in AllTokens)
             {
                 if (line.Count == 3)
@@ -187,6 +191,7 @@ namespace UrduProofReader.classes
             }
 
             UpdatedText = UpdatedText.Replace(" ، ", "، ");
+            UpdatedText = UpdatedText.Replace(" ۔ ", "۔ ");
         }
 
     }

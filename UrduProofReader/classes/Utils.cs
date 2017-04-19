@@ -209,9 +209,6 @@ namespace UrduProofReader.classes
 رآیا،ر آیا
 رآئ،ر آئ
 رآ ،ر آ 
- -،-
--، -
- - ،- 
 ۰ ئ،۰ء
 ۱ئ،۱ء
 ۱ ئ،۱ء

@@ -63,6 +63,12 @@
     <Compile Include="token\ManageTokens.Designer.cs">
       <DependentUpon>ManageTokens.cs</DependentUpon>
     </Compile>
+    <Compile Include="token\NewToken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="token\NewToken.Designer.cs">
+      <DependentUpon>NewToken.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +83,9 @@
     </Compile>
     <EmbeddedResource Include="token\ManageTokens.resx">
       <DependentUpon>ManageTokens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="token\NewToken.resx">
+      <DependentUpon>NewToken.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

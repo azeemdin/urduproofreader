@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UrduProofReader.token;
 using UrduProofReader.classes;
@@ -96,7 +90,7 @@ namespace UrduProofReader
 
         private void loadFile()
         {
-            uiTokenFileDialogue.Filter = "Urdu File|*txt";
+            uiTokenFileDialogue.Filter = "Urdu File (*.txt)|*.txt";
             if (uiTokenFileDialogue.ShowDialog() == DialogResult.OK)
             {
                 Utils._textFilePath = new FileInfo(uiTokenFileDialogue.FileName);
@@ -186,6 +180,16 @@ namespace UrduProofReader
         private void تصحیحکیجیےToolStripMenuItem_Click(object sender, EventArgs e)
         {
             updateIt();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(uiTextToProcess.SelectedText))
+            {
+                NewToken newToken = new NewToken();
+                newToken.newText = uiTextToProcess.SelectedText;
+                newToken.ShowDialog();
+            }
         }
     }
 }

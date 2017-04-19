@@ -17,3 +17,4 @@ D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProof
 D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.csproj.GenerateResource.Cache
 D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.exe
 D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.pdb
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.token.NewToken.resources
