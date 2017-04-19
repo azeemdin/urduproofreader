@@ -40,7 +40,7 @@ namespace UrduProofReader.classes
             int i = 0;
             foreach (DataRow row in _table.Rows)
             {
-                if (string.IsNullOrEmpty(row[0]+"") || string.IsNullOrEmpty(row[1] + "") || string.IsNullOrEmpty(row[2] + ""))
+                if (row[0] == null || row[1] == null || string.IsNullOrEmpty(row[2] + ""))
                 {
                     return false;
                 }
