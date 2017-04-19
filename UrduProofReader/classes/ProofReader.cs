@@ -120,7 +120,12 @@ namespace UrduProofReader.classes
         {
             StringBuilder tokenFile;
             clearTokens();
-            try
+
+            if (!File.Exists(Utils._basePath + "\\" + "tokenfile.txt"))
+            {
+                File.WriteAllText(Utils._basePath + "\\" + "tokenfile.txt", Utils._tokenList);
+            }
+                try
             {
                 tokenFile = new StringBuilder(File.ReadAllText(Utils._tokenFilePath.FullName));
             }

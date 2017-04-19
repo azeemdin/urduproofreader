@@ -7,3 +7,13 @@ D:\Projects\GetUrduDdata\UrduProofReader\UrduProofReader\obj\Debug\UrduProofRead
 D:\Projects\GetUrduDdata\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.csproj.GenerateResource.Cache
 D:\Projects\GetUrduDdata\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.exe
 D:\Projects\GetUrduDdata\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.pdb
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\bin\Debug\UrduProofReader.exe.config
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\bin\Debug\UrduProofReader.exe
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\bin\Debug\UrduProofReader.pdb
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.csprojResolveAssemblyReference.cache
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.MainForm.resources
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.Properties.Resources.resources
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.token.ManageTokens.resources
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.csproj.GenerateResource.Cache
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.exe
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.pdb
