@@ -249,11 +249,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Urdu Typesetting", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(606, 199);
+            this.label2.Location = new System.Drawing.Point(627, 199);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 33);
+            this.label2.Size = new System.Drawing.Size(183, 33);
             this.label2.TabIndex = 4;
-            this.label2.Text = "تصحیح کے شدہ مواد یہاں سے حاصل کریں";
+            this.label2.Text = "تصحیح شدہ مواد یہاں سے حاصل کریں";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uiUpdatedText
