@@ -5,6 +5,7 @@ using UrduProofReader.token;
 using UrduProofReader.classes;
 using System.Diagnostics;
 using System.IO;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace UrduProofReader
 {
@@ -90,13 +91,41 @@ namespace UrduProofReader
 
         private void loadFile()
         {
-            uiTokenFileDialogue.Filter = "Urdu File (*.txt)|*.txt";
+            uiTokenFileDialogue.Filter = "Urdu File (*.txt,*.doc,*.docx)|*.txt;*.doc;*.docx";
             if (uiTokenFileDialogue.ShowDialog() == DialogResult.OK)
             {
                 Utils._textFilePath = new FileInfo(uiTokenFileDialogue.FileName);
                 if (Utils._textFilePath != null)
                 {
-                    uiTextToProcess.Text = File.ReadAllText(Utils._textFilePath.FullName);
+                    if (Utils._textFilePath.Extension.Equals(".txt"))
+                    {
+                        uiTextToProcess.Text = File.ReadAllText(Utils._textFilePath.FullName);
+                    }
+                    else
+                    {
+                        Word.Application app = new Word.Application();
+                        Word.Document doc = null;
+                        object missing = Type.Missing;
+                        object readOnly = true;
+                        object path = Utils._textFilePath.FullName;
+                        try
+                        {
+                            doc = app.Documents.Open(ref path, ref missing, ref readOnly, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing);
+                            uiTextToProcess.Text = doc.Content.Text;
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("ورڈ کی فائل شامل کرنے میں مسئلہ ہے دوبارہ کوشش کیجیے", "ورڈ فائل", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        finally
+                        {
+                            if(doc != null)
+                            doc.Close();
+
+                            if(app != null)
+                            app.Quit();
+                        }
+                    }
                 }
             }
         }
