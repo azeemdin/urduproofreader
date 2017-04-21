@@ -18,3 +18,4 @@ D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProof
 D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.pdb
 D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.token.NewToken.resources
 D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.csproj.ResolveComReference.cache
+D:\Projects\GetUrduDdata\git\urduproofreader\UrduProofReader\obj\Debug\UrduProofReader.csprojResolveAssemblyReference.cache

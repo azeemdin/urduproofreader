@@ -57,7 +57,7 @@ namespace UrduProofReader.token
                 ts.save(textBox1.Text + "،" + textBox2.Text);
             }
 
-            MessageBox.Show("تبدیلیاں محفوظ ہو گئی ہیں", "تبدیل محفوظ کیجیے", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("تبدیلیاں محفوظ ہو گئی ہیں", "تبدیل محفوظ کیجیے", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Close();
         }

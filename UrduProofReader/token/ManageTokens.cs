@@ -51,7 +51,7 @@ namespace UrduProofReader.token
 
         private void uiSave_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("کیا آپ الفاظ کے ذخیرے میں تبدیلی کو محفوظ کرنا چاہتے ہیں؟", "تبدیل محفوظ کیجیے", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            //if (MessageBox.Show("کیا آپ الفاظ کے ذخیرے میں تبدیلی کو محفوظ کرنا چاہتے ہیں؟", "تبدیل محفوظ کیجیے", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (!TokenDataSet.Instance.save())
                 {
@@ -63,7 +63,7 @@ namespace UrduProofReader.token
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = TokenDataSet.Instance.DataTable;
 
-                MessageBox.Show("تبدیلیاں محفوظ ہو گئی ہیں", "تبدیل محفوظ کیجیے", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("تبدیلیاں محفوظ ہو گئی ہیں", "تبدیل محفوظ کیجیے", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
