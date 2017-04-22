@@ -45,7 +45,7 @@ namespace UrduProofReader.classes
             return false;
         }
 
-            public bool save()
+        public bool save()
         {
             StringBuilder allTokens = new StringBuilder();
             int i = 0;
@@ -122,6 +122,19 @@ namespace UrduProofReader.classes
 
                 _table.Rows.Add(myRow);
             }
+        }
+
+        public DataTable sorted(bool sort)
+        {
+            if (sort)
+            {
+                DataTable dtOut;
+                this.DataTable.DefaultView.Sort = "Column1 ASC";
+                dtOut = this.DataTable.DefaultView.ToTable();
+                return dtOut;
+            }
+
+            return this.DataTable;
         }
 
     }

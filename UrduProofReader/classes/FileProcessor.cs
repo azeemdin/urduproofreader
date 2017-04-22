@@ -20,21 +20,21 @@ namespace UrduProofReader.classes
             get { return this._reader; }
         }
 
-        public FileProcessor(FileInfo fileInfo, bool regex)
+        public FileProcessor(FileInfo fileInfo, bool regex, bool tokenOrder)
         {
             this._fileInfo = fileInfo;
-            init(regex);
+            init(regex, tokenOrder);
         }
 
-        public FileProcessor(DirectoryInfo dirInfo, bool regex)
+        public FileProcessor(DirectoryInfo dirInfo, bool regex, bool tokenOrder)
         {
             this._directoryInfo = dirInfo;
-            init(regex);
+            init(regex, tokenOrder);
         }
 
-        private void init(bool regex)
+        private void init(bool regex, bool tokenOrder)
         {
-            _reader = new ProofReader(regex);
+            _reader = new ProofReader(regex, tokenOrder);
         }
 
         private void _processFile()

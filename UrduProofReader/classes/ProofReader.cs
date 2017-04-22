@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Data;
 
 namespace UrduProofReader.classes
 {
@@ -15,12 +16,19 @@ namespace UrduProofReader.classes
         StringBuilder _errorText;
         StringBuilder _allText;
         StringBuilder _updatedText;
-        List<List<string>> _allTokens;
+        //List<List<string>> _allTokens;
         bool _isRegex = true;
+        bool _isTokenOrder=false;
 
         public bool IsError
         {
             get { return this._error; }
+        }
+
+        public bool TokenOrder
+        {
+            get { return this._isTokenOrder; }
+            set { _isTokenOrder = value; }
         }
 
         public bool IsRegex
@@ -90,29 +98,30 @@ namespace UrduProofReader.classes
             }
         }
 
-        public List<List<string>> AllTokens
-        {
-            get {
-                if (_allTokens == null)
-                    _allTokens = new List<List<string>>();
+        //public List<List<string>> AllTokens
+        //{
+        //    get {
+        //        if (_allTokens == null)
+        //            _allTokens = new List<List<string>>();
 
-                return _allTokens;
-            }
-        }
+        //        return _allTokens;
+        //    }
+        //}
 
         private void clearTokens()
         {
-            foreach (List<string> list in AllTokens)
-            {
-                list.Clear();
-            }
-            _allTokens.Clear();
-            _allTokens = null;
+            //foreach (List<string> list in AllTokens)
+            //{
+            //    list.Clear();
+            //}
+            //_allTokens.Clear();
+            //_allTokens = null;
         }
 
-        public ProofReader(bool regex)
+        public ProofReader(bool regex, bool tokenOrder)
         {
             this._isRegex = regex;
+            this._isTokenOrder = tokenOrder;
             Utils._tokenFilePath = new FileInfo(Utils._basePath + "\\" + "tokenfile.txt");
             loadTokenFile();
         }
@@ -156,7 +165,7 @@ namespace UrduProofReader.classes
                     list.Add(tokens[1]);
                 }
 
-                AllTokens.Add(list);
+                //AllTokens.Add(list);
             }
         }
 
@@ -181,16 +190,19 @@ namespace UrduProofReader.classes
             //UpdatedText = UpdatedText.Replace(" :", ":");
             //UpdatedText = UpdatedText.Replace(":", ": ");
 
-            foreach (List<string> line in AllTokens)
+            DataTable dt = TokenDataSet.Instance.sorted(this.TokenOrder);
+
+
+            foreach (DataRow line in dt.Rows)
             {
-                if (line.Count == 3)
+                if (bool.Parse(line[2]+""))
                 {
                     if (_isRegex)
-                        UpdatedText = new StringBuilder(Regex.Replace(UpdatedText.ToString(), @"" + line[1], line[2]));
+                        UpdatedText = new StringBuilder(Regex.Replace(UpdatedText.ToString(), @"" + line[0], line[1]+""));
                 }
                 else
                 {
-                    UpdatedText = UpdatedText.Replace(line[0], line[1]);
+                    UpdatedText = UpdatedText.Replace(line[0]+"", line[1]+"");
 
                     MainForm form = (MainForm) Application.OpenForms["MainForm"];
                 }

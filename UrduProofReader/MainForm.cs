@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using Word = Microsoft.Office.Interop.Word;
 using System.Collections.Generic;
+using System.Data;
 
 namespace UrduProofReader
 {
@@ -45,7 +46,7 @@ namespace UrduProofReader
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            _reader = new ProofReader(uiRegex.Checked);
+            _reader = new ProofReader(uiRegex.Checked, uiTokenOrder.Checked);
         }
 
         private void uiTokenForm_Click(object sender, EventArgs e)
@@ -60,12 +61,12 @@ namespace UrduProofReader
             {
                 updateIt();
 
-                foreach (List<string> line in _reader.AllTokens)
+                foreach (DataRow line in TokenDataSet.Instance.sorted(uiTokenOrder.Checked).Rows)
                 {
-                    if (line.Count != 3)
+                    if (bool.Parse(line[2] + ""))
                     {
-                        if(uiTextToProcess.Text.Contains(line[0]))
-                        GUIUtils.HighlightText(ref uiUpdatedText, line[1], System.Drawing.Color.Red);
+                        if(uiTextToProcess.Text.Contains(line[0]+""))
+                        GUIUtils.HighlightText(ref uiUpdatedText, line[1]+"", System.Drawing.Color.Red);
                     }
                 }
             }
@@ -85,6 +86,7 @@ namespace UrduProofReader
             uiStatusLabel.Text = "برائے مہربانی انتظار کیجیے";
 
             _reader.IsRegex = uiRegex.Checked;
+            _reader.TokenOrder = uiTokenOrder.Checked;
             _reader.TextToProcess = new StringBuilder(uiTextToProcess.Text);
 
             _reader.processText();
@@ -173,7 +175,7 @@ namespace UrduProofReader
             if (Utils._selectedDir == null)
                 return;
 
-            FileProcessor fileProcessor = new FileProcessor(Utils._selectedDir, uiRegex.Checked);
+            FileProcessor fileProcessor = new FileProcessor(Utils._selectedDir, uiRegex.Checked, uiTokenOrder.Checked);
             fileProcessor.endProcessing += FileProcessor_endProcessing;
             fileProcessor.reportProgress += FileProcessor_reportProgress;
             uiStatusLabel.Text = "برائے مہربانی انتظار کیجیے";

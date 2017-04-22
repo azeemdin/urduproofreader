@@ -60,6 +60,7 @@
             this.uiUpdatedText = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.uiTokenOrder = new System.Windows.Forms.CheckBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -317,6 +318,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.uiTokenOrder);
             this.splitContainer1.Panel1.Controls.Add(this.uiRegex);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.uiTextToProcess);
@@ -330,6 +332,16 @@
             this.splitContainer1.Size = new System.Drawing.Size(822, 392);
             this.splitContainer1.SplitterDistance = 184;
             this.splitContainer1.TabIndex = 5;
+            // 
+            // uiTokenOrder
+            // 
+            this.uiTokenOrder.AutoSize = true;
+            this.uiTokenOrder.Location = new System.Drawing.Point(143, 28);
+            this.uiTokenOrder.Name = "uiTokenOrder";
+            this.uiTokenOrder.Size = new System.Drawing.Size(204, 17);
+            this.uiTokenOrder.TabIndex = 10;
+            this.uiTokenOrder.Text = "ذخیرہ الفاظ کو حروف تہجی پر چھانٹیں";
+            this.uiTokenOrder.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -401,5 +413,6 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         public System.Windows.Forms.RichTextBox uiTextToProcess;
         public System.Windows.Forms.RichTextBox uiUpdatedText;
+        private System.Windows.Forms.CheckBox uiTokenOrder;
     }
 }
