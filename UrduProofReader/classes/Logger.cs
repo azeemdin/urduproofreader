@@ -9,14 +9,37 @@ namespace UrduProofReader.classes
 {
     class Logger
     {
-        public static void log(string message)
+        readonly object _lock = new object();
+
+
+        public void error(Exception ex)
         {
-            if (File.Exists(Utils._basePath + "\\error.txt"))
+
+            //if (File.Exists(Utils._basePath + "\\error.txt"))
+            //{
+            //    File.Create(Utils._basePath + "\\error.txt");
+            //}
+            StringBuilder errorString = new StringBuilder();
+            errorString.Append(ex.Message + "\r\n");
+            errorString.Append(ex.StackTrace + "\r\n");
+            if (ex.InnerException != null)
             {
-                File.Create(Utils._basePath + "\\error.txt");
+                errorString.Append(ex.InnerException.Message + "\r\n");
+                errorString.Append(ex.InnerException.StackTrace + "\r\n");
             }
 
-            File.AppendAllText(Utils._basePath + "\\error.txt",DateTime.Now.ToShortDateString()  + ": " + message);
+
+
+            lock (_lock)
+            {
+                using (FileStream file = new FileStream(Utils._basePath + "\\error.txt", FileMode.Append, FileAccess.Write, FileShare.Read))
+                {
+                    using (StreamWriter writer = new StreamWriter(file, Encoding.Unicode))
+                    {
+                        writer.Write(DateTime.Now.ToShortDateString() + ": " + errorString.ToString());
+                    }
+                }
+            }
         }
     }
 }

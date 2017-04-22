@@ -6,6 +6,7 @@ using UrduProofReader.classes;
 using System.Diagnostics;
 using System.IO;
 using Word = Microsoft.Office.Interop.Word;
+using System.Collections.Generic;
 
 namespace UrduProofReader
 {
@@ -24,11 +25,11 @@ namespace UrduProofReader
 
         protected override void WndProc(ref Message m)
         {
-            if (m.Msg == WM_NCLBUTTONDBLCLK)
-            {
-                m.Result = IntPtr.Zero;
-                return;
-            }
+            //if (m.Msg == WM_NCLBUTTONDBLCLK)
+            //{
+            //    m.Result = IntPtr.Zero;
+            //    return;
+            //}
             base.WndProc(ref m);
         }
 
@@ -58,13 +59,21 @@ namespace UrduProofReader
             try
             {
                 updateIt();
+
+                foreach (List<string> line in _reader.AllTokens)
+                {
+                    if (line.Count != 3)
+                    {
+                        if(uiTextToProcess.Text.Contains(line[0]))
+                        GUIUtils.HighlightText(ref uiUpdatedText, line[1], System.Drawing.Color.Red);
+                    }
+                }
             }
+
             catch (Exception ex)
             {
-                Logger.log(ex.Message);
-                Logger.log(ex.StackTrace);
-                Logger.log(ex.InnerException.Message);
-                Logger.log(ex.InnerException.StackTrace);
+                Logger logger = new Logger();
+                logger.error(ex);
                 MessageBox.Show("معذرت، کچھ مسئلہ پیدا ہوگیا ہے، دوبارہ کوشش کیجیے", "معذرت", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -102,10 +111,8 @@ namespace UrduProofReader
             }
             catch (Exception ex)
             {
-                Logger.log(ex.Message);
-                Logger.log(ex.StackTrace);
-                Logger.log(ex.InnerException.Message);
-                Logger.log(ex.InnerException.StackTrace);
+                Logger logger = new Logger();
+                logger.error(ex);
                 MessageBox.Show("معذرت، کچھ مسئلہ پیدا ہوگیا ہے، دوبارہ کوشش کیجیے", "معذرت", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -253,6 +260,27 @@ namespace UrduProofReader
                 MessageBox.Show("[" + i + "] نئے الفاظ درآمد ہو گئے ہیں۔", "درآمد", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+        }
+
+        private void MainForm_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Height > 506)
+            {
+                label1.Left = label1.Parent.Width - (label1.Width + 10);
+                label2.Left = label2.Parent.Width - (label2.Width + 10);
+
+                uiTextToProcess.Height = uiTextToProcess.Parent.Height - (60);
+                uiUpdatedText.Height = uiUpdatedText.Parent.Height - (60);
+            }
+            else
+            {
+                label1.Left = 631;
+                label1.Left = label1.Parent.Width - (label1.Width + 10);
+                label2.Left = label2.Parent.Width - (label2.Width + 10);
+
+                uiTextToProcess.Height = 133;
+                uiUpdatedText.Height = 133;
+            }
         }
     }
 }

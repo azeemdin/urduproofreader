@@ -643,10 +643,16 @@ E،شعر ?و ?سخن،شعر و سخن
 E،نشو ?و? ?نما،نشو و نما
 E،اللہتعالیٰ،اللہ تعالیٰ
 E،آپa،آپؐ
-  ، 
  “،“
 “،“ 
  “ ،“ 
+ ۔،۔
+۔،۔ 
+ ۔ ،۔ 
+ :،:
+:،: 
+ : ،: 
+  ، 
 ” ،”";
 
         private static bool ControlInvokeRequired(Control c, Action a)

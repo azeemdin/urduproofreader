@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\FileProcessor.cs" />
+    <Compile Include="classes\GUIUtils.cs" />
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\ProofReader.cs" />
     <Compile Include="classes\TokenDataSet.cs" />

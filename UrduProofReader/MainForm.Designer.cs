@@ -45,6 +45,7 @@
             this.uiToolbarCorrectbtn = new System.Windows.Forms.ToolStripButton();
             this.uiLoadFileBtn = new System.Windows.Forms.ToolStripButton();
             this.uiLoadDirBtn = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.uiTokenList = new System.Windows.Forms.ToolStripButton();
             this.uiExitToolButton = new System.Windows.Forms.ToolStripButton();
             this.uiTokenFileDialogue = new System.Windows.Forms.OpenFileDialog();
@@ -58,12 +59,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.uiUpdatedText = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.uiGetTextMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -198,6 +203,15 @@
             this.uiLoadDirBtn.Text = "ڈائریکٹری کی تصحیح کیجیے";
             this.uiLoadDirBtn.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(117, 22);
+            this.toolStripButton1.Text = "ذخیرہ درآمد کیجیے";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // uiTokenList
             // 
             this.uiTokenList.Image = ((System.Drawing.Image)(resources.GetObject("uiTokenList.Image")));
@@ -232,7 +246,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Urdu Typesetting", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(631, 15);
+            this.label1.Location = new System.Drawing.Point(631, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 33);
             this.label1.TabIndex = 2;
@@ -242,9 +256,10 @@
             // uiTextToProcess
             // 
             this.uiTextToProcess.ContextMenuStrip = this.uiGetTextMenu;
-            this.uiTextToProcess.Location = new System.Drawing.Point(12, 51);
+            this.uiTextToProcess.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.uiTextToProcess.Location = new System.Drawing.Point(0, 51);
             this.uiTextToProcess.Name = "uiTextToProcess";
-            this.uiTextToProcess.Size = new System.Drawing.Size(798, 133);
+            this.uiTextToProcess.Size = new System.Drawing.Size(822, 133);
             this.uiTextToProcess.TabIndex = 1;
             this.uiTextToProcess.Text = "";
             // 
@@ -267,7 +282,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Urdu Typesetting", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(627, 199);
+            this.label2.Location = new System.Drawing.Point(627, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(183, 33);
             this.label2.TabIndex = 4;
@@ -276,34 +291,45 @@
             // 
             // uiUpdatedText
             // 
-            this.uiUpdatedText.Location = new System.Drawing.Point(12, 244);
+            this.uiUpdatedText.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.uiUpdatedText.Location = new System.Drawing.Point(0, 71);
             this.uiUpdatedText.Name = "uiUpdatedText";
             this.uiUpdatedText.ReadOnly = true;
-            this.uiUpdatedText.Size = new System.Drawing.Size(792, 133);
+            this.uiUpdatedText.Size = new System.Drawing.Size(822, 133);
             this.uiUpdatedText.TabIndex = 3;
             this.uiUpdatedText.Text = "";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.uiUpdatedText);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.uiTextToProcess);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.uiRegex);
+            this.panel2.Controls.Add(this.splitContainer1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 49);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(822, 392);
             this.panel2.TabIndex = 8;
             // 
-            // toolStripButton1
+            // splitContainer1
             // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(117, 22);
-            this.toolStripButton1.Text = "ذخیرہ درآمد کیجیے";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.uiRegex);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Controls.Add(this.uiTextToProcess);
+            this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.label2);
+            this.splitContainer1.Panel2.Controls.Add(this.uiUpdatedText);
+            this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer1.Size = new System.Drawing.Size(822, 392);
+            this.splitContainer1.SplitterDistance = 184;
+            this.splitContainer1.TabIndex = 5;
             // 
             // MainForm
             // 
@@ -317,13 +343,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "اردو پروف ریڈر";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -332,7 +358,12 @@
             this.toolStrip1.PerformLayout();
             this.uiGetTextMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,12 +393,13 @@
         private System.Windows.Forms.ToolStripMenuItem تصحیحکیجیےToolStripMenuItem;
         private System.Windows.Forms.CheckBox uiRegex;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox uiTextToProcess;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox uiUpdatedText;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ContextMenuStrip uiGetTextMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        public System.Windows.Forms.RichTextBox uiTextToProcess;
+        public System.Windows.Forms.RichTextBox uiUpdatedText;
     }
 }

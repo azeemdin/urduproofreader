@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace UrduProofReader.classes
 {
@@ -174,11 +175,11 @@ namespace UrduProofReader.classes
             UpdatedText = UpdatedText.Replace(" ،", "،");
             UpdatedText = UpdatedText.Replace("،", "، ");
 
-            UpdatedText = UpdatedText.Replace(" ۔", "۔");
-            UpdatedText = UpdatedText.Replace("۔", "۔ ");
+            //UpdatedText = UpdatedText.Replace(" ۔", "۔");
+            //UpdatedText = UpdatedText.Replace("۔", "۔ ");
 
-            UpdatedText = UpdatedText.Replace(" :", ":");
-            UpdatedText = UpdatedText.Replace(":", ": ");
+            //UpdatedText = UpdatedText.Replace(" :", ":");
+            //UpdatedText = UpdatedText.Replace(":", ": ");
 
             foreach (List<string> line in AllTokens)
             {
@@ -190,12 +191,14 @@ namespace UrduProofReader.classes
                 else
                 {
                     UpdatedText = UpdatedText.Replace(line[0], line[1]);
+
+                    MainForm form = (MainForm) Application.OpenForms["MainForm"];
                 }
             }
 
             UpdatedText = UpdatedText.Replace(" ، ", "، ");
-            UpdatedText = UpdatedText.Replace(" ۔ ", "۔ ");
-            UpdatedText = UpdatedText.Replace(" : ", ": ");
+            //UpdatedText = UpdatedText.Replace(" ۔ ", "۔ ");
+            //UpdatedText = UpdatedText.Replace(" : ", ": ");
         }
 
     }
