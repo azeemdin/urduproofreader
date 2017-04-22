@@ -55,7 +55,18 @@ namespace UrduProofReader
 
         private void uiToolbarCorrectbtn_Click(object sender, EventArgs e)
         {
-            updateIt();
+            try
+            {
+                updateIt();
+            }
+            catch (Exception ex)
+            {
+                Logger.log(ex.Message);
+                Logger.log(ex.StackTrace);
+                Logger.log(ex.InnerException.Message);
+                Logger.log(ex.InnerException.StackTrace);
+                MessageBox.Show("معذرت، کچھ مسئلہ پیدا ہوگیا ہے، دوبارہ کوشش کیجیے", "معذرت", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void updateIt()
