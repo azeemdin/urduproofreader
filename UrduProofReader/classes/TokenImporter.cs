@@ -46,7 +46,11 @@ namespace UrduProofReader.classes
 
                 if (!exists)
                 {
-                    newLinestoAdd.Append(oldLineText.ToString() + "\r\n");
+                    string[] tokens = oldLineText.ToString().Split(new char[] { '،' });
+                    if (tokens.Length == 3 || tokens.Length == 2)
+                    {
+                        newLinestoAdd.Append(oldLineText.ToString() + "\r\n");
+                    }
                     i++;
                 }
             }
