@@ -97,7 +97,17 @@ namespace UrduProofReader
 
         private void uiLoadFile_Click(object sender, EventArgs e)
         {
+            try { 
             loadFile();
+            }
+            catch (Exception ex)
+            {
+                Logger.log(ex.Message);
+                Logger.log(ex.StackTrace);
+                Logger.log(ex.InnerException.Message);
+                Logger.log(ex.InnerException.StackTrace);
+                MessageBox.Show("معذرت، کچھ مسئلہ پیدا ہوگیا ہے، دوبارہ کوشش کیجیے", "معذرت", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void loadFile()
@@ -230,6 +240,19 @@ namespace UrduProofReader
                 newToken.newText = uiTextToProcess.SelectedText;
                 newToken.ShowDialog();
             }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            TokenImporter importer;
+            if (uiTokenFileDialogue.ShowDialog() == DialogResult.OK)
+            {
+                importer = new TokenImporter(uiTokenFileDialogue.FileName);
+                int i = importer.import();
+
+                MessageBox.Show("[" + i + "] نئے الفاظ درآمد ہو گئے ہیں۔", "درآمد", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
     }
 }

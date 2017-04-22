@@ -53,16 +53,17 @@
             this.uiRegex = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.uiTextToProcess = new System.Windows.Forms.RichTextBox();
+            this.uiGetTextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.uiUpdatedText = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uiGetTextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.uiGetTextMenu.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -161,6 +162,7 @@
             this.uiToolbarCorrectbtn,
             this.uiLoadFileBtn,
             this.uiLoadDirBtn,
+            this.toolStripButton1,
             this.uiTokenList,
             this.uiExitToolButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
@@ -246,6 +248,21 @@
             this.uiTextToProcess.TabIndex = 1;
             this.uiTextToProcess.Text = "";
             // 
+            // uiGetTextMenu
+            // 
+            this.uiGetTextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.uiGetTextMenu.Name = "uiGetText";
+            this.uiGetTextMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.uiGetTextMenu.Size = new System.Drawing.Size(174, 26);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.toolStripMenuItem1.Text = "نیا لفظ شامل کیجیے";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -279,20 +296,14 @@
             this.panel2.Size = new System.Drawing.Size(822, 392);
             this.panel2.TabIndex = 8;
             // 
-            // uiGetTextMenu
+            // toolStripButton1
             // 
-            this.uiGetTextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.uiGetTextMenu.Name = "uiGetText";
-            this.uiGetTextMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.uiGetTextMenu.Size = new System.Drawing.Size(174, 48);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
-            this.toolStripMenuItem1.Text = "نیا لفظ شامل کیجیے";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(117, 22);
+            this.toolStripButton1.Text = "ذخیرہ درآمد کیجیے";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // MainForm
             // 
@@ -319,9 +330,9 @@
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.uiGetTextMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.uiGetTextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,5 +368,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ContextMenuStrip uiGetTextMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

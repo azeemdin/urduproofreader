@@ -47,6 +47,8 @@ namespace UrduProofReader.token
             dataGridView1.Columns[2].DataPropertyName = "Column3";
 
             dataGridView1.DataSource = TokenDataSet.Instance.DataTable;
+
+            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
 
         private void uiSave_Click(object sender, EventArgs e)

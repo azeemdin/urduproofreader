@@ -49,6 +49,7 @@
     <Compile Include="classes\Logger.cs" />
     <Compile Include="classes\ProofReader.cs" />
     <Compile Include="classes\TokenDataSet.cs" />
+    <Compile Include="classes\TokenImporter.cs" />
     <Compile Include="classes\Utils.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
