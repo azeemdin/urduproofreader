@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using Microsoft.Office.Tools.Ribbon;
 using UrduLibs;
@@ -19,10 +17,17 @@ namespace UrduProofReaderWE
         {
             try
             {
+                object missing = Type.Missing;
+                object findText = "find me";
+                object foundText = "found me";
+
                 UrduLibs.ProofReader _reader = new UrduLibs.ProofReader(uiRegex.Checked, uiTokenSort.Checked, uiFullWord.Checked);
 
                 _reader.TextToProcess = new StringBuilder(Globals.ThisAddIn.Application.ActiveDocument.Content.Text);
                 _reader.processText();
+
+                //Globals.ThisAddIn.Application.ActiveDocument.Content.Text = Globals.ThisAddIn.Application.ActiveDocument.Content.Text.Replace("find me", "found now");
+
 
                 if (!_reader.IsError)
                     Globals.ThisAddIn.Application.ActiveDocument.Content.Text = _reader.UpdatedText.ToString();

@@ -1,5 +1,4 @@
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\bin\Debug\UrduProofReader.exe.config
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.csprojResolveAssemblyReference.cache
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.csproj.ResolveComReference.cache
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.MainForm.resources
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.Properties.Resources.resources

@@ -8,6 +8,8 @@ using System.IO;
 using Word = Microsoft.Office.Interop.Word;
 using System.Data;
 using UrduLibs;
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.parser;
 
 namespace UrduProofReader
 {
@@ -121,7 +123,7 @@ namespace UrduProofReader
 
         private void loadFile()
         {
-            uiTokenFileDialogue.Filter = "Urdu File (*.txt,*.doc,*.docx)|*.txt;*.doc;*.docx";
+            uiTokenFileDialogue.Filter = "Urdu File (*.txt,*.doc,*.docx,*.pdf)|*.txt;*.doc;*.docx;*.pdf";
             if (uiTokenFileDialogue.ShowDialog() == DialogResult.OK)
             {
                 Utils._textFilePath = new FileInfo(uiTokenFileDialogue.FileName);
@@ -130,6 +132,23 @@ namespace UrduProofReader
                     if (Utils._textFilePath.Extension.Equals(".txt"))
                     {
                         uiTextToProcess.Text = File.ReadAllText(Utils._textFilePath.FullName);
+                    }
+                    else if (Utils._textFilePath.Extension.Equals(".pdf"))
+                    {
+                        StringBuilder text = new StringBuilder();
+                        using (PdfReader pdfReader = new PdfReader(Utils._textFilePath.FullName))
+                        {
+                            for (int page = 1; page <= pdfReader.NumberOfPages; page++)
+                            {
+                                ITextExtractionStrategy strategy = new SimpleTextExtractionStrategy();
+                                string currentText = PdfTextExtractor.GetTextFromPage(pdfReader, page, strategy);
+
+                                currentText = Encoding.UTF8.GetString(ASCIIEncoding.Convert(Encoding.Default, Encoding.UTF8, Encoding.Default.GetBytes(currentText)));
+                                text.Append(currentText);
+                            }
+                        }
+
+                        uiTextToProcess.Text = text.ToString();
                     }
                     else
                     {
@@ -149,11 +168,11 @@ namespace UrduProofReader
                         }
                         finally
                         {
-                            if(doc != null)
-                            doc.Close();
+                            if (doc != null)
+                                doc.Close();
 
-                            if(app != null)
-                            app.Quit();
+                            if (app != null)
+                                app.Quit();
                         }
                     }
                 }

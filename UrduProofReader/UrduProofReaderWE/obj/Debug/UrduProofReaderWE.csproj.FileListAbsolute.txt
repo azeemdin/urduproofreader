@@ -1,7 +1,6 @@
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.ProofReader.resources
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.Properties.Resources.resources
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.csproj.GenerateResource.Cache
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.csprojResolveAssemblyReference.cache
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.pdb
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.dll.manifest
@@ -12,8 +11,8 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microso
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Word.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduLibs.dll
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduLibs.pdb
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReader.exe
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReader.pdb
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.xml
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.xml
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.xml
@@ -21,3 +20,4 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microso
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.pdb
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.csprojResolveAssemblyReference.cache
