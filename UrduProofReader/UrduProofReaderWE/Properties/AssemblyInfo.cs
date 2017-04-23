@@ -6,11 +6,11 @@ using System.Security;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UrduProofReaderWE")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Urdu Proof Reader")]
+[assembly: AssemblyDescription("Urdu Proof Reader Word Plugin")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UrduProofReaderWE")]
+[assembly: AssemblyCompany("Muhammad Azeem")]
+[assembly: AssemblyProduct("Urdu Proof Reader")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
