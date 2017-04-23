@@ -28,10 +28,5 @@
 		</TaggedOutputs> -->
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
-	<ItemGroup>
-		<ProjectReference Include="..\UrduProofReaderWE\UrduProofReaderWE.csproj">
-			<Name>UrduProofReaderWE</Name>
-			<Project>{26C64392-F7AC-46A7-B1B1-7338EBE878A8}</Project>
-		</ProjectReference>
-	</ItemGroup>
+	<ItemGroup/>
 </Project>

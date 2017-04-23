@@ -10,9 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrduProofReaderWE", "UrduProofReaderWE\UrduProofReaderWE.csproj", "{26C64392-F7AC-46A7-B1B1-7338EBE878A8}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "ProofReaderWordInstaller", "ProofReaderWordInstaller\ProofReaderWordInstaller.isproj", "{2B542380-96C1-4D4D-95A4-E4C071AFBB0A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{26C64392-F7AC-46A7-B1B1-7338EBE878A8} = {26C64392-F7AC-46A7-B1B1-7338EBE878A8}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
