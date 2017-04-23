@@ -115,6 +115,9 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="UrduLibs">
+      <HintPath>..\UrduLibs\bin\Debug\UrduLibs.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -194,10 +197,6 @@
     <None Include="UrduProofReaderWE_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UrduLibs\UrduLibs.csproj">
-      <Project>{21157001-ea51-4aee-b82e-41e795e7cee9}</Project>
-      <Name>UrduLibs</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UrduProofReader\UrduProofReader.csproj">
       <Project>{5871461d-9457-402f-8f59-155a0a043c19}</Project>
       <Name>UrduProofReader</Name>
