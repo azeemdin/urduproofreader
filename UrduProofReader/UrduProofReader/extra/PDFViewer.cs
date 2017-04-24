@@ -28,8 +28,8 @@ namespace UrduProofReader.extra
 
         private void PDFViewer_Load(object sender, EventArgs e)
         {
-            uiSave.Left = uiSave.Parent.Width - (uiSave.Width + 10);
-            button1.Left = button1.Parent.Width - (button1.Width + 120);
+            button1.Left = button1.Parent.Width - (button1.Width + 10);
+            //button1.Left = button1.Parent.Width - (button1.Width + 120);
 
             uiOpenFileDialog.Filter = "PDF File (*.pdf)|*.pdf";
             splitContainer1.SplitterDistance = splitContainer1.Height - 55;
@@ -65,42 +65,21 @@ namespace UrduProofReader.extra
             }
         }
 
-        private void uiSave_Click(object sender, EventArgs e)
-        {
-            if (richTextBox1.Text.Length == 0)
-            {
-                MessageBox.Show("مہربانی کر کے متن شامل کیجیے", "متن موجود نہیں", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                richTextBox1.Focus();
-                return;
-            }
-
-            try
-            {
-                if (uiSaveDialog.ShowDialog() == DialogResult.OK)
-                {
-                    File.WriteAllText(uiSaveDialog.FileName, richTextBox1.Text);
-                    MessageBox.Show("تبدیلیاں محفوظ ہو گئی ہیں", "تبدیل محفوظ کیجیے", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger logger = new Logger();
-                logger.error(ex);
-                MessageBox.Show("معذرت، کچھ مسئلہ پیدا ہوگیا ہے، دوبارہ کوشش کیجیے", "معذرت", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
-            }
-        }
-
         private void PDFViewer_SizeChanged(object sender, EventArgs e)
         {
-            uiSave.Left = uiSave.Parent.Width - (uiSave.Width + 10);
-            button1.Left = button1.Parent.Width - (button1.Width + 120);
+            button1.Left = button1.Parent.Width - (button1.Width + 10);
+            //button1.Left = button1.Parent.Width - (button1.Width + 120);
 
             splitContainer1.SplitterDistance = splitContainer1.Height - 55;
             splitContainer1.FixedPanel = FixedPanel.Panel2;
         }
 
-        private void richTextBox1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadFile(false);
+        }
+
+        private void radRichTextEditor1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.Modifiers == Keys.Control && e.KeyCode == Keys.Up)
             {
@@ -115,11 +94,6 @@ namespace UrduProofReader.extra
                 currentScrollVal = currentScrollVal + 2;
                 uiPDF.setViewScroll("FitH", (currentScrollVal));
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            loadFile(false);
         }
     }
 }
