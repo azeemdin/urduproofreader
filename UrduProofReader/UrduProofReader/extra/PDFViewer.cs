@@ -70,8 +70,11 @@ namespace UrduProofReader.extra
             button1.Left = button1.Parent.Width - (button1.Width + 10);
             //button1.Left = button1.Parent.Width - (button1.Width + 120);
 
-            splitContainer1.SplitterDistance = splitContainer1.Height - 55;
-            splitContainer1.FixedPanel = FixedPanel.Panel2;
+            if (splitContainer1.Height > 55)
+            {
+                splitContainer1.SplitterDistance = splitContainer1.Height - 55;
+                splitContainer1.FixedPanel = FixedPanel.Panel2;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
