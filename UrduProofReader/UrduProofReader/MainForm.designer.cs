@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.uiStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -46,6 +47,7 @@
             this.uiLoadDirBtn = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.uiTokenList = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.uiExitToolButton = new System.Windows.Forms.ToolStripButton();
             this.uiTokenFileDialogue = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -53,7 +55,7 @@
             this.uiRegex = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.uiTextToProcess = new System.Windows.Forms.RichTextBox();
-            this.uiGetTextMenu = new System.Windows.Forms.ContextMenuStrip();
+            this.uiGetTextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.uiUpdatedText = new System.Windows.Forms.RichTextBox();
@@ -170,6 +172,7 @@
             this.uiLoadDirBtn,
             this.toolStripButton1,
             this.uiTokenList,
+            this.toolStripButton2,
             this.uiExitToolButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
@@ -221,6 +224,15 @@
             this.uiTokenList.Size = new System.Drawing.Size(83, 22);
             this.uiTokenList.Text = "ذخیرہ الفاظ";
             this.uiTokenList.Click += new System.EventHandler(this.uiTokenList_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(117, 22);
+            this.toolStripButton2.Text = "پی ڈی ایف کھڑکی";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click_1);
             // 
             // uiExitToolButton
             // 
@@ -370,7 +382,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "اردو پروف ریڈر";
+            this.Text = "اردو پروف ریڈر -v 1.0.0";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.statusStrip1.ResumeLayout(false);
@@ -426,5 +438,6 @@
         public System.Windows.Forms.RichTextBox uiUpdatedText;
         private System.Windows.Forms.CheckBox uiTokenOrder;
         private System.Windows.Forms.CheckBox uiFullWord;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
     }
 }

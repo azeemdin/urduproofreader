@@ -1,0 +1,12 @@
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\bin\Release\UrduProofReader.exe.config
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\Interop.AcroPDFLib.dll
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\AxInterop.AcroPDFLib.dll
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.csproj.ResolveComReference.cache
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.extra.PDFViewer.resources
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.MainForm.resources
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.Properties.Resources.resources
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.token.ManageTokens.resources
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.token.NewToken.resources
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.csproj.GenerateResource.Cache
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.exe
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Release\UrduProofReader.pdb

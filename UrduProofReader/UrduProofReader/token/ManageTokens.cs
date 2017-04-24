@@ -8,7 +8,8 @@ namespace UrduProofReader.token
     public partial class ManageTokens : Form
     {
         private const int WM_NCLBUTTONDBLCLK = 0x00A3; //double click on a title bar a.k.a. non-client area of the form {msg=0xa3 
-
+        int rowIndex = -1;
+        int oldRow = -2;
         public ManageTokens()
         {
             InitializeComponent();
@@ -61,6 +62,51 @@ namespace UrduProofReader.token
 
                 //MessageBox.Show("تبدیلیاں محفوظ ہو گئی ہیں", "تبدیل محفوظ کیجیے", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void uiSearch_Click(object sender, EventArgs e)
+        {
+            rowIndex = -1;
+            uiDelete.Enabled = false;
+            dataGridView1.ClearSelection();
+            bool found = false;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString().Contains(textBox1.Text))
+                {
+                    //Select the row here
+                    rowIndex = row.Index;
+
+                    if (oldRow == -2 || oldRow != rowIndex && rowIndex> oldRow)
+                    {
+                        oldRow = rowIndex;
+
+                        dataGridView1.Rows[rowIndex].Selected = true;
+                        dataGridView1.FirstDisplayedScrollingRowIndex = rowIndex;
+                        dataGridView1.Focus();
+                        uiDelete.Enabled = true;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!found)
+                oldRow = -2;
+        }
+
+        private void uiDelete_Click(object sender, EventArgs e)
+        {
+            if (rowIndex != -1)
+            {
+                dataGridView1.Rows.RemoveAt(rowIndex);
+                uiDelete.Enabled = false;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            oldRow = -2;
         }
     }
 }

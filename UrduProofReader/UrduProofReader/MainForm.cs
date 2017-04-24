@@ -10,6 +10,7 @@ using System.Data;
 using UrduLibs;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
+using UrduProofReader.extra;
 
 namespace UrduProofReader
 {
@@ -140,10 +141,9 @@ namespace UrduProofReader
                         {
                             for (int page = 1; page <= pdfReader.NumberOfPages; page++)
                             {
-                                ITextExtractionStrategy strategy = new SimpleTextExtractionStrategy();
+                                ITextExtractionStrategy strategy = new TextWithFontExtractionStategy();
                                 string currentText = PdfTextExtractor.GetTextFromPage(pdfReader, page, strategy);
 
-                                currentText = Encoding.UTF8.GetString(ASCIIEncoding.Convert(Encoding.Default, Encoding.UTF8, Encoding.Default.GetBytes(currentText)));
                                 text.Append(currentText);
                             }
                         }
@@ -303,6 +303,13 @@ namespace UrduProofReader
                 uiTextToProcess.Height = 133;
                 uiUpdatedText.Height = 133;
             }
+        }
+
+        private void toolStripButton2_Click_1(object sender, EventArgs e)
+        {
+
+            PDFViewer pdfView = new PDFViewer();
+            pdfView.ShowDialog();
         }
     }
 }

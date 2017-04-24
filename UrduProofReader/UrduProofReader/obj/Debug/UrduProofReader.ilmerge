@@ -1,3 +1,5 @@
 UrduProofReader.exe
 UrduLibs.dll
+Interop.AcroPDFLib.dll
+AxInterop.AcroPDFLib.dll
 itextsharp.dll

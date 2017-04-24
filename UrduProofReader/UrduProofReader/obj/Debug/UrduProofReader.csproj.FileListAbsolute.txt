@@ -7,4 +7,6 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProof
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.csproj.GenerateResource.Cache
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.exe
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.pdb
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.csprojResolveAssemblyReference.cache
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.extra.PDFViewer.resources
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\Interop.AcroPDFLib.dll
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\AxInterop.AcroPDFLib.dll
