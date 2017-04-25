@@ -30,14 +30,14 @@ namespace UrduLibs
 
         public UrduDictionary()
         {
-            if (!File.Exists(Utils._updatedDirPath.FullName))
+            if (!File.Exists(Utils._dicFilePath.FullName))
             {
-                File.WriteAllText(Utils._updatedDirPath.FullName, Utils._dicWords.ToString());
+                File.WriteAllText(Utils._dicFilePath.FullName, Utils._dicWords.ToString());
                 _fullText = new StringBuilder(Utils._dicWords.ToString());
             }
             else
             {
-                _fullText = new StringBuilder(File.ReadAllText(Utils._updatedDirPath.FullName));
+                _fullText = new StringBuilder(File.ReadAllText(Utils._dicFilePath.FullName));
             }
         }
 
