@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using UrduLibs;
+using Telerik.WinForms.Documents.Proofing;
 
 namespace UrduProofReader.extra
 {
@@ -27,7 +28,7 @@ namespace UrduProofReader.extra
         }
 
         private void PDFViewer_Load(object sender, EventArgs e)
-        {
+        {           
             button1.Left = button1.Parent.Width - (button1.Width + 10);
             //button1.Left = button1.Parent.Width - (button1.Width + 120);
 
@@ -36,6 +37,13 @@ namespace UrduProofReader.extra
             splitContainer1.FixedPanel = FixedPanel.Panel2;
 
             loadFile(true);
+
+            RadDictionary dic = new RadDictionary();
+            dic.Load(new MemoryStream(Encoding.UTF8.GetBytes(UrduProofReader.Properties.Resources.urdu_in)));
+            //radRichTextEditor1.SpellChecker = new Telerik.WinForms.Documents.Proofing.DocumentSpellChecker();
+            var d = new Telerik.WinForms.Documents.Proofing.DocumentSpellChecker();
+            d.AddDictionary(dic, System.Globalization.CultureInfo.CurrentCulture);
+            radRichTextEditor1.SpellChecker = d;
         }
 
         private void loadFile(bool close)
@@ -80,6 +88,7 @@ namespace UrduProofReader.extra
         private void button1_Click(object sender, EventArgs e)
         {
             loadFile(false);
+            //radRichTextEditor1.SpellChecker.AddWord()
         }
 
         private void radRichTextEditor1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
