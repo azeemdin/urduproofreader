@@ -13,3 +13,4 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProof
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.exe.licenses
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.exe
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.pdb
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\Debug\UrduProofReader.csprojResolveAssemblyReference.cache

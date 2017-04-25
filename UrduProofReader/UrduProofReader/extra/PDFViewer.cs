@@ -39,11 +39,20 @@ namespace UrduProofReader.extra
             loadFile(true);
 
             RadDictionary dic = new RadDictionary();
-            dic.Load(new MemoryStream(Encoding.UTF8.GetBytes(UrduProofReader.Properties.Resources.urdu_in)));
-            //radRichTextEditor1.SpellChecker = new Telerik.WinForms.Documents.Proofing.DocumentSpellChecker();
+            dic.Load(new MemoryStream(Encoding.UTF8.GetBytes(UrduLibs.UrduDictionary.Instance.FullText.ToString())));
             var d = new Telerik.WinForms.Documents.Proofing.DocumentSpellChecker();
             d.AddDictionary(dic, System.Globalization.CultureInfo.CurrentCulture);
             radRichTextEditor1.SpellChecker = d;
+
+            radRichTextEditor1.SpellChecker.DataChanged += SpellChecker_DataChanged;
+        }
+
+        private void SpellChecker_DataChanged(object sender, EventArgs e)
+        {
+            // New Word Added in Dic
+            DocumentSpellChecker dsc = (DocumentSpellChecker)sender;
+            ICustomWordDictionary spellchecker = dsc.GetCustomDictionary();
+            UrduLibs.UrduDictionary.Instance.save(spellchecker.Words.Last());
         }
 
         private void loadFile(bool close)

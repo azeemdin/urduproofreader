@@ -57,7 +57,7 @@
     <Reference Include="Telerik.WinControls.UI, Version=2017.1.221.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
     <Reference Include="TelerikCommon, Version=2017.1.221.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
     <Reference Include="UrduLibs">
-      <HintPath>..\UrduLibs\bin\Debug\UrduLibs.dll</HintPath>
+      <HintPath>..\UrduLibs\bin\Release\UrduLibs.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -382,7 +382,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "اردو پروف ریڈر -v 1.1.1";
+            this.Text = "اردو پروف ریڈر -v 1.1.2";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.statusStrip1.ResumeLayout(false);

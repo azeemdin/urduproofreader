@@ -1,0 +1,4 @@
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\bin\Release\UrduLibs.dll
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\bin\Release\UrduLibs.pdb
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\Release\UrduLibs.dll
+D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\Release\UrduLibs.pdb
