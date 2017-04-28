@@ -62,16 +62,25 @@ namespace UrduProofReader
         {
             try
             {
-                updateIt();
-
-                foreach (DataRow line in TokenDataSet.Instance.sorted(uiTokenOrder.Checked).Rows)
+                if (uiCustomTokens.Checked)
                 {
-                    if (bool.Parse(line[2] + ""))
+                    uiTokenFileDialogue.Filter = "Token File (*.txt)|*.txt;*";
+                    if (uiTokenFileDialogue.ShowDialog() == DialogResult.OK)
                     {
-                        if(uiTextToProcess.Text.Contains(line[0]+""))
-                        GUIUtils.HighlightText(ref uiUpdatedText, line[1]+"", System.Drawing.Color.Red);
+                        TokenDataSet.Instance.initlize(uiTokenFileDialogue.FileName);
                     }
                 }
+
+                updateIt();
+
+                //foreach (DataRow line in TokenDataSet.Instance.sorted(uiTokenOrder.Checked).Rows)
+                //{
+                //    if (bool.Parse(line[2] + ""))
+                //    {
+                //        if (uiTextToProcess.Text.Contains(line[0] + ""))
+                //            GUIUtils.HighlightText(ref uiUpdatedText, line[1] + "", System.Drawing.Color.Red);
+                //    }
+                //}
             }
 
             catch (Exception ex)
@@ -79,6 +88,13 @@ namespace UrduProofReader
                 Logger logger = new Logger();
                 logger.error(ex);
                 MessageBox.Show("معذرت، کچھ مسئلہ پیدا ہوگیا ہے، دوبارہ کوشش کیجیے", "معذرت", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally {
+                uiToolbarCorrectbtn.Enabled = true;
+                if (uiCustomTokens.Checked)
+                {
+                    TokenDataSet.Instance.dispose();
+                }
             }
         }
 
@@ -90,6 +106,14 @@ namespace UrduProofReader
 
             _reader.IsRegex = uiRegex.Checked;
             _reader.TokenOrder = uiTokenOrder.Checked;
+            _reader.FullWord = uiFullWord.Checked;
+            _reader.RemoveAirab = uiAirab.Checked;
+
+            if (uiTextToProcess.SelectedText != null)
+            {
+                _reader.SelectedText = new StringBuilder(uiTextToProcess.SelectedText);
+            }
+
             _reader.TextToProcess = new StringBuilder(uiTextToProcess.Text);
 
             _reader.processText();
@@ -111,8 +135,9 @@ namespace UrduProofReader
 
         private void uiLoadFile_Click(object sender, EventArgs e)
         {
-            try { 
-            loadFile();
+            try
+            {
+                loadFile();
             }
             catch (Exception ex)
             {
@@ -310,6 +335,24 @@ namespace UrduProofReader
 
             PDFViewer pdfView = new PDFViewer();
             pdfView.ShowDialog();
+        }
+
+        private void uiIndesignDic_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.FileName = "urd_PK.dic";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                TokenDataSet.Instance.exportInDesignDic(saveFileDialog1.FileName);
+            }
+        }
+
+        private void uiIndesignScript_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.FileName = "urd_PK.txt";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                TokenDataSet.Instance.exportInDesignScript(saveFileDialog1.FileName);
+            }
         }
     }
 }

@@ -41,6 +41,8 @@
             this.تصحیحکیجیےToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uiMenuLoadFile = new System.Windows.Forms.ToolStripMenuItem();
             this.uiMenuProcessDir = new System.Windows.Forms.ToolStripMenuItem();
+            this.uiIndesignDic = new System.Windows.Forms.ToolStripMenuItem();
+            this.uiIndesignScript = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.uiToolbarCorrectbtn = new System.Windows.Forms.ToolStripButton();
             this.uiLoadFileBtn = new System.Windows.Forms.ToolStripButton();
@@ -61,6 +63,8 @@
             this.uiUpdatedText = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.uiCustomTokens = new System.Windows.Forms.CheckBox();
+            this.uiAirab = new System.Windows.Forms.CheckBox();
             this.uiFullWord = new System.Windows.Forms.CheckBox();
             this.uiTokenOrder = new System.Windows.Forms.CheckBox();
             this.statusStrip1.SuspendLayout();
@@ -138,7 +142,9 @@
             this.اعمالToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.تصحیحکیجیےToolStripMenuItem,
             this.uiMenuLoadFile,
-            this.uiMenuProcessDir});
+            this.uiMenuProcessDir,
+            this.uiIndesignDic,
+            this.uiIndesignScript});
             this.اعمالToolStripMenuItem.Name = "اعمالToolStripMenuItem";
             this.اعمالToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.اعمالToolStripMenuItem.Text = "&اعمال";
@@ -146,23 +152,37 @@
             // تصحیحکیجیےToolStripMenuItem
             // 
             this.تصحیحکیجیےToolStripMenuItem.Name = "تصحیحکیجیےToolStripMenuItem";
-            this.تصحیحکیجیےToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.تصحیحکیجیےToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.تصحیحکیجیےToolStripMenuItem.Text = "&تصحیح کیجیے";
             this.تصحیحکیجیےToolStripMenuItem.Click += new System.EventHandler(this.تصحیحکیجیےToolStripMenuItem_Click);
             // 
             // uiMenuLoadFile
             // 
             this.uiMenuLoadFile.Name = "uiMenuLoadFile";
-            this.uiMenuLoadFile.Size = new System.Drawing.Size(210, 22);
+            this.uiMenuLoadFile.Size = new System.Drawing.Size(228, 22);
             this.uiMenuLoadFile.Text = "&فائل شامل کیجیے";
             this.uiMenuLoadFile.Click += new System.EventHandler(this.uiMenuLoadFile_Click);
             // 
             // uiMenuProcessDir
             // 
             this.uiMenuProcessDir.Name = "uiMenuProcessDir";
-            this.uiMenuProcessDir.Size = new System.Drawing.Size(210, 22);
+            this.uiMenuProcessDir.Size = new System.Drawing.Size(228, 22);
             this.uiMenuProcessDir.Text = "&ڈائریکٹری کی تصحیح کیجیے";
             this.uiMenuProcessDir.Click += new System.EventHandler(this.uiMenuProcessDir_Click);
+            // 
+            // uiIndesignDic
+            // 
+            this.uiIndesignDic.Name = "uiIndesignDic";
+            this.uiIndesignDic.Size = new System.Drawing.Size(226, 22);
+            this.uiIndesignDic.Text = "انڈیزائن کی لغت برآمد کیجیے";
+            this.uiIndesignDic.Click += new System.EventHandler(this.uiIndesignDic_Click);
+            // 
+            // uiIndesignScript
+            // 
+            this.uiIndesignScript.Name = "uiIndesignScript";
+            this.uiIndesignScript.Size = new System.Drawing.Size(226, 22);
+            this.uiIndesignScript.Text = "انڈیزائن کا اسکرپٹ برآمد کیجیے";
+            this.uiIndesignScript.Click += new System.EventHandler(this.uiIndesignScript_Click);
             // 
             // toolStrip1
             // 
@@ -248,7 +268,7 @@
             this.uiRegex.AutoSize = true;
             this.uiRegex.Checked = true;
             this.uiRegex.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.uiRegex.Location = new System.Drawing.Point(12, 28);
+            this.uiRegex.Location = new System.Drawing.Point(3, 28);
             this.uiRegex.Name = "uiRegex";
             this.uiRegex.Size = new System.Drawing.Size(111, 17);
             this.uiRegex.TabIndex = 3;
@@ -330,6 +350,8 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.uiCustomTokens);
+            this.splitContainer1.Panel1.Controls.Add(this.uiAirab);
             this.splitContainer1.Panel1.Controls.Add(this.uiFullWord);
             this.splitContainer1.Panel1.Controls.Add(this.uiTokenOrder);
             this.splitContainer1.Panel1.Controls.Add(this.uiRegex);
@@ -346,10 +368,30 @@
             this.splitContainer1.SplitterDistance = 184;
             this.splitContainer1.TabIndex = 5;
             // 
+            // uiCustomTokens
+            // 
+            this.uiCustomTokens.AutoSize = true;
+            this.uiCustomTokens.Location = new System.Drawing.Point(488, 28);
+            this.uiCustomTokens.Name = "uiCustomTokens";
+            this.uiCustomTokens.Size = new System.Drawing.Size(109, 17);
+            this.uiCustomTokens.TabIndex = 13;
+            this.uiCustomTokens.Text = "منتخب ذخیرہ الفاظ";
+            this.uiCustomTokens.UseVisualStyleBackColor = true;
+            // 
+            // uiAirab
+            // 
+            this.uiAirab.AutoSize = true;
+            this.uiAirab.Location = new System.Drawing.Point(377, 28);
+            this.uiAirab.Name = "uiAirab";
+            this.uiAirab.Size = new System.Drawing.Size(105, 17);
+            this.uiAirab.TabIndex = 12;
+            this.uiAirab.Text = "اعراب ختم کیجیے";
+            this.uiAirab.UseVisualStyleBackColor = true;
+            // 
             // uiFullWord
             // 
             this.uiFullWord.AutoSize = true;
-            this.uiFullWord.Location = new System.Drawing.Point(286, 28);
+            this.uiFullWord.Location = new System.Drawing.Point(252, 28);
             this.uiFullWord.Name = "uiFullWord";
             this.uiFullWord.Size = new System.Drawing.Size(119, 17);
             this.uiFullWord.TabIndex = 11;
@@ -359,7 +401,7 @@
             // uiTokenOrder
             // 
             this.uiTokenOrder.AutoSize = true;
-            this.uiTokenOrder.Location = new System.Drawing.Point(143, 28);
+            this.uiTokenOrder.Location = new System.Drawing.Point(120, 28);
             this.uiTokenOrder.Name = "uiTokenOrder";
             this.uiTokenOrder.Size = new System.Drawing.Size(126, 17);
             this.uiTokenOrder.TabIndex = 10;
@@ -382,7 +424,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "اردو پروف ریڈر -v 1.1.2";
+            this.Text = "اردو پروف ریڈر -v 1.1.9";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.SizeChanged += new System.EventHandler(this.MainForm_SizeChanged);
             this.statusStrip1.ResumeLayout(false);
@@ -439,5 +481,9 @@
         private System.Windows.Forms.CheckBox uiTokenOrder;
         private System.Windows.Forms.CheckBox uiFullWord;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.CheckBox uiAirab;
+        private System.Windows.Forms.ToolStripMenuItem uiIndesignDic;
+        private System.Windows.Forms.ToolStripMenuItem uiIndesignScript;
+        private System.Windows.Forms.CheckBox uiCustomTokens;
     }
 }

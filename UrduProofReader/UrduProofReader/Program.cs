@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrduProofReader.classes;
 
 namespace UrduProofReader
 {
@@ -14,6 +15,7 @@ namespace UrduProofReader
         [STAThread]
         static void Main()
         {
+            GUIUtils.loadRadMEF();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

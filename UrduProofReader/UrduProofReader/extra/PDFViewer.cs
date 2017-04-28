@@ -66,7 +66,7 @@ namespace UrduProofReader.extra
 
                 if (_fileInfo != null)
                 {
-                    uiPDF.LoadFile(_fileInfo.FullName);
+                    uiPDF.src = _fileInfo.FullName;
                 }
 
                 uiSaveDialog.Filter = "Text File (*.txt)|*.txt";

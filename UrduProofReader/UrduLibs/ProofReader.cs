@@ -10,10 +10,61 @@ namespace UrduLibs
         bool _error;
         StringBuilder _errorText;
         StringBuilder _allText;
+        StringBuilder _selectedText;
         StringBuilder _updatedText;
+        StringBuilder _updatedSelectedText;
         bool _isRegex = true;
         bool _isTokenOrder=false;
         bool _isFullWord = false;
+        bool _removeAirab = false;
+
+        public bool RemoveAirab
+        {
+            get { return this._removeAirab; }
+            set { _removeAirab = value; }
+        }
+
+        public StringBuilder SelectedText
+        {
+            get
+            {
+                if (_selectedText != null)
+                    return _selectedText;
+                return null;
+            }
+            set
+            {
+                if (_selectedText == null)
+                {
+                    _selectedText = new StringBuilder(value.ToString());
+                }
+                else
+                {
+                    _selectedText = new StringBuilder(value.ToString());
+                }
+            }
+        }
+
+        public StringBuilder SelectedUpdatedText
+        {
+            get
+            {
+                if (_updatedSelectedText != null)
+                    return _updatedSelectedText;
+                return null;
+            }
+            set
+            {
+                if (_updatedSelectedText == null)
+                {
+                    _updatedSelectedText = new StringBuilder(value.ToString());
+                }
+                else
+                {
+                    _updatedSelectedText = new StringBuilder(value.ToString());
+                }
+            }
+        }
 
         public bool IsError
         {
@@ -136,6 +187,16 @@ namespace UrduLibs
 
             DataTable dt = TokenDataSet.Instance.sorted(this.TokenOrder);
 
+            if (RemoveAirab && SelectedText != null && SelectedText.Length > 0)
+            {
+                //SelectedUpdatedText = new StringBuilder(Regex.Replace(SelectedText.ToString(), @"\p{M}", ""));
+                SelectedUpdatedText = new StringBuilder(Regex.Replace(SelectedText.ToString(), @"[\u0617-\u061A\u064B-\u0652]", "", RegexOptions.IgnoreCase));
+
+                if (SelectedUpdatedText != null && SelectedUpdatedText.Length > 0)
+                {
+                    UpdatedText = UpdatedText.Replace(SelectedText.ToString(), SelectedUpdatedText.ToString());
+                }
+            }
 
             foreach (DataRow line in dt.Rows)
             {
@@ -158,6 +219,17 @@ namespace UrduLibs
             }
 
             UpdatedText = UpdatedText.Replace(" ، ", "، ");
+
+            if (SelectedText != null)
+            {
+                SelectedText.Clear();
+            }
+
+            if (SelectedUpdatedText != null)
+            {
+                SelectedUpdatedText.Clear();
+            }
+
         }
 
     }

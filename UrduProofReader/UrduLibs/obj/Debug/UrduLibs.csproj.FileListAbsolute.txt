@@ -2,4 +2,3 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\bin\Debug\UrduLibs.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\bin\Debug\UrduLibs.pdb
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\Debug\UrduLibs.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\Debug\UrduLibs.pdb
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\Debug\UrduLibs.csprojResolveAssemblyReference.cache

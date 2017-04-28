@@ -4,6 +4,8 @@ using Microsoft.Office.Tools.Ribbon;
 using UrduLibs;
 using System.Windows.Forms;
 using UrduProofReader.token;
+using Microsoft.Office.Interop.Word;
+using System.Data;
 
 namespace UrduProofReaderWE
 {
@@ -18,15 +20,18 @@ namespace UrduProofReaderWE
             try
             {
                 object missing = Type.Missing;
-                object findText = "find me";
-                object foundText = "found me";
+                object trueObj = true;
+
 
                 UrduLibs.ProofReader _reader = new UrduLibs.ProofReader(uiRegex.Checked, uiTokenSort.Checked, uiFullWord.Checked);
 
                 _reader.TextToProcess = new StringBuilder(Globals.ThisAddIn.Application.ActiveDocument.Content.Text);
                 _reader.processText();
 
-                //Globals.ThisAddIn.Application.ActiveDocument.Content.Text = Globals.ThisAddIn.Application.ActiveDocument.Content.Text.Replace("find me", "found now");
+                //Globals.ThisAddIn.Application.ActiveDocument.Content.Text = Globals.ThisAddIn.Application.ActiveDocument.Content.Text.Replace("چل", "چل اوئے");
+
+                //Range rng = Globals.ThisAddIn.Application.ActiveDocument.Content;
+                //System.Data.DataTable dt = TokenDataSet.Instance.sorted(uiTokenSort.Checked);
 
 
                 if (!_reader.IsError)
