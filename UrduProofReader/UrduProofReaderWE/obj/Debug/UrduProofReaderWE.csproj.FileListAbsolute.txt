@@ -15,7 +15,6 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microso
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.xml
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Word.xml
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
-D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.csprojResolveAssemblyReference.cache
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.ProofReader.resources
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.Properties.Resources.resources
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\obj\Debug\UrduProofReaderWE.csproj.GenerateResource.Cache

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabAddIns" label="اردو پروف ریڈر">
+                <group id="group1" label="تصحیح">
+                    <checkBox id="uiRegex" label="ریگولر ایکسپریشن" onAction="GetRegex" getPressed="DefaultChecked" />
+                    <checkBox id="uiTokenSort" label="الفاظ کی ترتیب" />
+                    <button id="uiCorrectIt" onAction="uiCorrectIt_Click" label="تصحیح کیجیے" showImage="false" />
+                    <checkBox id="uiFullWord" label="پورا لفظ تلاش کیجیے" />
+                    <checkBox id="uiAirab" label="اعراب ختم کیجیے" />
+                    <checkBox id="uiShowChanges" label="تبدیل کو واضح کیجیے" />
+                </group>
+                <group id="group2" label="ذخیرہ الفاظ">
+                    <button id="uiManageTokens" onAction="uiManageTokens_Click" label="ذخیرہ" showImage="false" />
+                    <button id="uiImportTokens" onAction="uiImportTokens_Click" label="ذخیرہ درآمد کیجیے" showImage="false" />
+                    <checkBox id="uiCustomTokens" label="منتخب ذخیرہ الفاظ" />
+                </group>
+                <group id="group3" label="فارمیٹنگ">
+                    <checkBox id="uiBold" label="موٹا" />
+                    <checkBox id="uiUnderline" label="انڈر لائن" />
+                    <checkBox id="uiItalic" label="ٹیڑھا" />
+                  <dropDown id="uiFonts" label="فونٹ" showImage="false">
+                    <item label="Aavsd" id="_sjds2" />
+                  </dropDown>
+                    <dropDown id="uiSizes" label="سائز" showImage="false" />
+                    <button id="uiSelectColor" onAction="uiSelectColor_Click" label="رنگ منتخب کیجیے" showImage="false" />
+                    <button id="button1" onAction="button1_Click" label="تبدیل کیجیے" showImage="false" />
+                </group>
+            </tab>
+        </tabs>    
+    </ribbon>
+</customUI>

@@ -341,15 +341,14 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{F621B4C2-0D62-4C58-AB78-7BDD0D9CB916}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{1A308062-B86F-4762-BD9F-C9AEF28CDF51}</td><td>INSTALLDIR</td><td>258</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Office.Tools.Common.dll</td><td>{E4543071-74BB-412D-8210-297494EFA062}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.commo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>{C4FD1C2F-79DF-4872-96B6-B19CC9892417}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.commo1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Office.Tools.Word.dll</td><td>{A947BAF4-A7F5-4704-9672-898F4A2B1B62}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.word.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Office.Tools.dll</td><td>{FE381F26-161D-4161-9616-B15CEF569DC8}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.Office.Tools.v4.0.Framework.dll</td><td>{5B389AA3-9613-49AA-A3B4-26D43EC1012E}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.v4.0.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>{026A30E5-2808-4E35-8A8A-3A1741058170}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.visualstudio.tools</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>UrduProofReader.exe</td><td>{CC1C5E73-2F2F-4281-B428-4B123A525254}</td><td>INSTALLDIR</td><td>2</td><td/><td>urduproofreader.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>UrduProofReaderWE.dll</td><td>{CFB83737-5ADF-4B4B-BFAC-44DCF1404264}</td><td>INSTALLDIR</td><td>2</td><td/><td>urduproofreaderwe.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Office.Tools.Common.dll</td><td>{D363A676-D3DD-4683-B745-C7EA2B256A35}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.commo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>{0374ED16-FD5B-4099-8B4D-5888EC0467C5}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.commo1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Office.Tools.Word.dll</td><td>{B4FFB6C0-D816-4EE2-BDAD-2ADB8EB77C9D}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.word.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Office.Tools.dll</td><td>{76C46588-0E69-48BD-9CC9-E9F1CC1A58EC}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.Office.Tools.v4.0.Framework.dll</td><td>{B82BE632-9246-4C3D-BD0D-5AC0FCF2A09E}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.office.tools.v4.0.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>{F1F70325-9517-4A75-81DB-A4350FF80822}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.visualstudio.tools</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>UrduProofReader.exe</td><td>{CC17A952-E915-4F03-8DD8-DC57D50E7BFA}</td><td>INSTALLDIR</td><td>2</td><td/><td>urduproofreader.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>UrduProofReaderWE.dll</td><td>{5BFACF6C-7B37-4CFC-8F5B-75A1C43D74F8}</td><td>INSTALLDIR</td><td>2</td><td/><td>urduproofreaderwe.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1059,7 +1058,6 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
-		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 		<row><td>INSTALLDIR</td><td>Microsoft.Office.Tools.Common.dll</td></row>
 		<row><td>INSTALLDIR</td><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td></row>
 		<row><td>INSTALLDIR</td><td>Microsoft.Office.Tools.Word.dll</td></row>
@@ -1881,7 +1879,6 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
-		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 		<row><td>AlwaysInstall</td><td>Microsoft.Office.Tools.Common.dll</td></row>
 		<row><td>AlwaysInstall</td><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td></row>
 		<row><td>AlwaysInstall</td><td>Microsoft.Office.Tools.Word.dll</td></row>
@@ -1904,24 +1901,23 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>microsoft.office.tools.commo</td><td>Microsoft.Office.Tools.Common.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.Common.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.dll</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.commo1</td><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.commo2</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.Common.v4.0.Utilities.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.commo3</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.Common.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Common.xml</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.dll</td><td>Microsoft.Office.Tools.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.dll</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.v4.0.</td><td>Microsoft.Office.Tools.v4.0.Framework.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.v4.0.Framework.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.dll</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.v4.0.1</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.v4.0.Framework.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.v4.0.Framework.xml</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.word.</td><td>Microsoft.Office.Tools.Word.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.Word.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Word.dll</td><td>1</td><td/></row>
-		<row><td>microsoft.office.tools.word.1</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.Word.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.Office.Tools.Word.xml</td><td>1</td><td/></row>
-		<row><td>microsoft.visualstudio.tools</td><td>Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>MICROS~1.DLL|Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>1</td><td/></row>
-		<row><td>microsoft.visualstudio.tools1</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.VisualStudio.Tools.Applications.Runtime.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.xml</td><td>1</td><td/></row>
-		<row><td>tokenfile.txt</td><td>ISX_DEFAULTCOMPONENT</td><td>TOKENF~1.TXT|tokenfile.txt</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\tokenfile.txt</td><td>1</td><td/></row>
-		<row><td>urduproofreader.exe</td><td>UrduProofReader.exe</td><td>URDUPR~1.EXE|UrduProofReader.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReader.exe</td><td>1</td><td/></row>
-		<row><td>urduproofreader.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.PDB|UrduProofReader.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReader.pdb</td><td>1</td><td/></row>
-		<row><td>urduproofreaderwe.dll</td><td>UrduProofReaderWE.dll</td><td>URDUPR~1.DLL|UrduProofReaderWE.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.dll</td><td>1</td><td/></row>
-		<row><td>urduproofreaderwe.dll.manife</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.MAN|UrduProofReaderWE.dll.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.dll.manifest</td><td>1</td><td/></row>
-		<row><td>urduproofreaderwe.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.PDB|UrduProofReaderWE.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.pdb</td><td>1</td><td/></row>
-		<row><td>urduproofreaderwe.vsto</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.VST|UrduProofReaderWE.vsto</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\Debug\UrduProofReaderWE.vsto</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.commo</td><td>Microsoft.Office.Tools.Common.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.Common.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.Common.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.commo1</td><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.commo2</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.Common.v4.0.Utilities.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.commo3</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.Common.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.Common.xml</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.dll</td><td>Microsoft.Office.Tools.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.v4.0.</td><td>Microsoft.Office.Tools.v4.0.Framework.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.v4.0.Framework.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.v4.0.Framework.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.v4.0.1</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.v4.0.Framework.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.v4.0.Framework.xml</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.word.</td><td>Microsoft.Office.Tools.Word.dll</td><td>MICROS~1.DLL|Microsoft.Office.Tools.Word.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.Word.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.office.tools.word.1</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.Office.Tools.Word.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.Office.Tools.Word.xml</td><td>1</td><td/></row>
+		<row><td>microsoft.visualstudio.tools</td><td>Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>MICROS~1.DLL|Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td>1</td><td/></row>
+		<row><td>microsoft.visualstudio.tools1</td><td>ISX_DEFAULTCOMPONENT</td><td>MICROS~1.XML|Microsoft.VisualStudio.Tools.Applications.Runtime.xml</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.xml</td><td>1</td><td/></row>
+		<row><td>urduproofreader.exe</td><td>UrduProofReader.exe</td><td>URDUPR~1.EXE|UrduProofReader.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\UrduProofReader.exe</td><td>1</td><td/></row>
+		<row><td>urduproofreader.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.PDB|UrduProofReader.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\UrduProofReader.pdb</td><td>1</td><td/></row>
+		<row><td>urduproofreaderwe.dll</td><td>UrduProofReaderWE.dll</td><td>URDUPR~1.DLL|UrduProofReaderWE.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\UrduProofReaderWE.dll</td><td>1</td><td/></row>
+		<row><td>urduproofreaderwe.dll.manife</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.MAN|UrduProofReaderWE.dll.manifest</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\UrduProofReaderWE.dll.manifest</td><td>1</td><td/></row>
+		<row><td>urduproofreaderwe.pdb</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.PDB|UrduProofReaderWE.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\UrduProofReaderWE.pdb</td><td>1</td><td/></row>
+		<row><td>urduproofreaderwe.vsto</td><td>ISX_DEFAULTCOMPONENT</td><td>URDUPR~1.VST|UrduProofReaderWE.vsto</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReaderWE\bin\x86\Debug\UrduProofReaderWE.vsto</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2066,15 +2062,14 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_40ACA12F_D955_42FC_990B_711ED2664DED_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_03A398EA_952C_428D_95F1_56993972E002_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Office.Tools.Common.dll</td><td/><td/><td>_BB23E8A5_93D3_4034_84D8_F1CF50111099_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td/><td/><td>_648A74AD_5BE3_4AAE_82AF_E69E6752A6DB_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Office.Tools.Word.dll</td><td/><td/><td>_E956DF53_31AD_4DFE_A1EF_5E12A955F6A6_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Office.Tools.dll</td><td/><td/><td>_6C4453B4_42E3_4B1E_A180_FB9F662C9485_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.Office.Tools.v4.0.Framework.dll</td><td/><td/><td>_C8F2AAC3_1C1A_4F06_AB4B_A916B39F962B_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td/><td/><td>_409B5AE5_E92C_467C_AD84_174B29299517_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>UrduProofReader.exe</td><td/><td/><td>_BDF516A5_EF99_469F_9445_58F8C15C1135_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>UrduProofReaderWE.dll</td><td/><td/><td>_4E957670_EACF_497F_8A91_AD3F0884FC3B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Office.Tools.Common.dll</td><td/><td/><td>_63E4634D_FEB6_4E52_AE8D_07BD296D8EC5_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Office.Tools.Common.v4.0.Utilities.dll</td><td/><td/><td>_D8E367B1_19EB_4FDA_BD64_038D980FE69B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Office.Tools.Word.dll</td><td/><td/><td>_B7190364_E6AC_4CC6_B224_C9223D62B11C_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Office.Tools.dll</td><td/><td/><td>_DE22163B_C2FA_434A_AC03_216F0AA9937F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.Office.Tools.v4.0.Framework.dll</td><td/><td/><td>_E9F23543_41AE_4DD2_893D_82E694B91A15_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>Microsoft.VisualStudio.Tools.Applications.Runtime.dll</td><td/><td/><td>_AC4CB3EC_DD89_49AE_B70F_7F0E8A662B8D_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>UrduProofReader.exe</td><td/><td/><td>_C122FBF3_0FC0_48C6_A406_870EC8DF0AB9_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>UrduProofReaderWE.dll</td><td/><td/><td>_2DF8229A_9FB0_4EFA_9787_406D77824845_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -3478,6 +3473,14 @@
 		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1033</td><td>This setup works until %s. The setup will now exit.</td><td>0</td><td/><td>-1171923949</td></row>
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>-1171923949</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>-1171966795</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>-366648055</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>312829159</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>581295719</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME5</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>581272846</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME6</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>581299534</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME7</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>1252360905</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME8</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>1252354921</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME9</td><td>1033</td><td>LAUNCH~1.EXE|Launch UrduProofReader.exe</td><td>0</td><td/><td>1252348873</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>-1171923949</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>-1171923949</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>-1171923949</td></row>
@@ -3883,7 +3886,15 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_258CF907511844908BA12215335DDD6D.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_4492079E8C7144A0A74CE5E826FD521F.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>UrduProofReader.ex_4F5ADAF356C0412694B73AF870A7C102.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_595DCCAB38064906A78FF61B62E10FE7.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_98792608F691406B8026410BF545D261.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_CCC14FA9D7A74C2CAFE0E071D4B369B5.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_E97C762C1BC04AAE8039DB203D1CA166.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_F068ED4A58DF45DFBC9026B52A1FECCA.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>UrduProofReader.ex_F4948C3880A64A11ABE9C2E7A3FB650A.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -4459,16 +4470,11 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S0">Value</col>
 		<col def="s72">Component_</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>Registry1</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>Description</td><td>Urdu Proof Reader</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
-		<row><td>Registry10</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>Manifest</td><td>file:///[INSTALLDIR]UrduProofReaderWE.vsto|vstolocal</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
-		<row><td>Registry2</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>FriendlyName</td><td>Urdu Proof Reader</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
-		<row><td>Registry3</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>LoadBehavior</td><td>#3</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
-		<row><td>Registry4</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>Manifest</td><td>file:///[INSTALLDIR]UrduProofReaderWE.vsto|vstolocal</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
-		<row><td>Registry5</td><td>2</td><td>SOFTWARE</td><td/><td/><td>ISX_DEFAULTCOMPONENT</td><td>1</td></row>
+		<row><td>Registry1</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>Manifest</td><td>file:///[INSTALLDIR]UrduProofReaderWE.vsto|vstolocal</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
+		<row><td>Registry2</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>Description</td><td>Urdu Proof Reader</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
+		<row><td>Registry3</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>FriendlyName</td><td>Urdu Proof Reader</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
+		<row><td>Registry4</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>LoadBehavior</td><td>#3</td><td>ISX_DEFAULTCOMPONENT</td><td>0</td></row>
 		<row><td>Registry6</td><td>1</td><td>Software</td><td/><td/><td>ISX_DEFAULTCOMPONENT</td><td>1</td></row>
-		<row><td>Registry7</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>Description</td><td>Urdu Proof Reader</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
-		<row><td>Registry8</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>FriendlyName</td><td>Urdu Proof Reader</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
-		<row><td>Registry9</td><td>2</td><td>SOFTWARE\Microsoft\Office\Word\Addins\Mahfil.UrduProofReader</td><td>LoadBehavior</td><td>#3</td><td>ISX_DEFAULTCOMPONENT1</td><td>0</td></row>
 	</table>
 
 	<table name="RemoveFile">
@@ -4477,8 +4483,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>FileKey1</td><td>UrduProofReader.exe</td><td/><td>mahfil</td><td>2</td></row>
-		<row><td>FileKey2</td><td>UrduProofReader.exe</td><td/><td>urdupr_1_urdu_proof_reader</td><td>2</td></row>
 		<row><td>UrduProofReader.exe</td><td>UrduProofReader.exe</td><td/><td>urdupr_1_urdu_proof_reader</td><td>2</td></row>
 	</table>
 
@@ -4565,7 +4569,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>UrduProofReader.exe</td><td>urdupr_1_urdu_proof_reader</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>UrduProofReader.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>UrduProofReader.ex_4F5ADAF356C0412694B73AF870A7C102.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>UrduProofReader.exe</td><td>urdupr_1_urdu_proof_reader</td><td>##IDS_SHORTCUT_DISPLAY_NAME9##</td><td>UrduProofReader.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>UrduProofReader.ex_4492079E8C7144A0A74CE5E826FD521F.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

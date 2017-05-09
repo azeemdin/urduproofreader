@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="UrduProofReaderWE.dll" version="1.0.0.1" publicKeyToken="398d8685af6fd5cb" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="UrduProofReaderWE.dll" version="1.0.0.1" publicKeyToken="398d8685af6fd5cb" language="neutral" processorArchitecture="x86" type="win32" />
   <description xmlns="urn:schemas-microsoft-com:asm.v1">UrduProofReaderWE</description>
   <application />
   <entryPoint>
@@ -49,6 +49,16 @@
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.ComponentModel.Composition" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xaml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
@@ -124,26 +134,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UrduProofReader.exe" size="4527616">
-      <assemblyIdentity name="UrduProofReader" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UrduProofReader.exe" size="25071104">
+      <assemblyIdentity name="UrduProofReader" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iTSy+eMHXhEMwHmdKXLPoyDAkLlVWjw/sMhqXr97jRE=</dsig:DigestValue>
+        <dsig:DigestValue>0d5duIG2L2Z+onwZ2GOKOybuLUm7HsZ7Qgc1nXjxEGc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UrduProofReaderWE.dll" size="16896">
-      <assemblyIdentity name="UrduProofReaderWE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UrduProofReaderWE.dll" size="43008">
+      <assemblyIdentity name="UrduProofReaderWE" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JIsy5XM/c7oAv+vFLBQw1/IuvxX4zqgR89wZ2yxUx70=</dsig:DigestValue>
+        <dsig:DigestValue>bDMxpchi56LvFO5vzWw388KV+AWL4+cKthGGTsJGg2I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -151,7 +161,7 @@
     <vstav3:entryPointsCollection>
       <vstav3:entryPoints>
         <vstav3:entryPoint class="UrduProofReaderWE.ThisAddIn">
-          <assemblyIdentity name="UrduProofReaderWE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+          <assemblyIdentity name="UrduProofReaderWE" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
         </vstav3:entryPoint>
       </vstav3:entryPoints>
     </vstav3:entryPointsCollection>
@@ -172,4 +182,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=DESKTOP-VORG9PC\azeemdin" issuerKeyHash="bf9434d5e6b4a3c4cd1d543ddd62ae662e0b1d06" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DtLxDMOUBfTAU7qUhM7Ag5eD7bpXhs/D1mWcEnadicU=</DigestValue></Reference></SignedInfo><SignatureValue>iUoK+p5UaQBHAEkihYmXYp86QSxAMHCGBY8VxgDCyxdwgNudHTx61VMEK7s7BTyJmSsxRgyEM4FXiKNllBpkXHptqHa65ayZX4ry7z91h6sIPWLMAzVIcHndE2eXnUU0gtHHOikgEQcMqjGXpsfhiGZOD0k0m0hBov/Kv5r/29A=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tuEJLLh3fdvDP0GTBmeHWDicKBy+dKmNBdxGmV2FIMmdPA6uSZ02JoTGAa4p7Jz9k7wI9lB4V97XmJ7OYEcclWzmr2EXJlUYvAwDyGdXq3W3QsY1XIrf3RWG85j0RJOuWzAJpbqp3mqUZmQmObosFLwcCj00qe9bPWatcCjm7pc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c5899d76129c65d6c3cf8657baed839783c0ce8494ba53c0f40594c30cf1d20e" Description="" Url=""><as:assemblyIdentity name="UrduProofReaderWE.dll" version="1.0.0.1" publicKeyToken="398d8685af6fd5cb" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VORG9PC\azeemdin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5IzpXg6U/Wp2wEN1XoDlqb1BVD0531BpX2A6G/mBqdk=</DigestValue></Reference></SignedInfo><SignatureValue>fLQgkzsizkbGDln70DqGltWRlv/IGD4WvJ8m98rXr6LvZMAkFKcWv1nKbJxbTimW5MEhKrXssY8LUksw4prAZat/0fViHzPrdy5T5cPLoNfge9wJQarSaalfJlhKbaGdgiBKwXluhVdsjxM0N09hW2FYI17GScaZckUxtZyl3dI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tuEJLLh3fdvDP0GTBmeHWDicKBy+dKmNBdxGmV2FIMmdPA6uSZ02JoTGAa4p7Jz9k7wI9lB4V97XmJ7OYEcclWzmr2EXJlUYvAwDyGdXq3W3QsY1XIrf3RWG85j0RJOuWzAJpbqp3mqUZmQmObosFLwcCj00qe9bPWatcCjm7pc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQIsBPAaP4kIdIAeolrMh4JjANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAFYATwBSAEcAOQBQAEMAXABhAHoAZQBlAG0AZABpAG4wHhcNMTcwNDIzMTQ1OTA2WhcNMTgwNDIzMjA1OTA2WjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAFYATwBSAEcAOQBQAEMAXABhAHoAZQBlAG0AZABpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALbhCSy4d33bwz9BkwZnh1g4nCgcvnSpjQXcRpldhSDJnTwOrkmdNiaExgGuKeyc/ZO8CPZQeFfe15iezmBHHJVs5q9hFyZVGLwMA8hnV6t1t0LGNVyK390VhvOY9ESTrlswCaW6qd5qlGZkJjm6LBS8HAo9NKnvWz1mrXAo5u6XAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIuistmNd6xa4CQJVStqS8MRuQ362m0D8jI+/qsAopzacLP6AcMo2DVGfjqFplmxcGOwgB+a0A4xiKNTPBkW75f30mh90Fc4MSgL/tjw9JGJ0nd6+lenseVPN3mjzmsKkaaTzyqTM0KfrGCnW5b0MU7nmMCD0TbN8I+PzlLkXatU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-VORG9PC\azeemdin" issuerKeyHash="bf9434d5e6b4a3c4cd1d543ddd62ae662e0b1d06" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GIzU00+avPInzmeNHhTYJmOabDihP5CmNTKRenwhN6A=</DigestValue></Reference></SignedInfo><SignatureValue>m4WbU1O/1rriZEZpG+x+bXG1HNwfJMSCIBe7k3swqdJ22VXG1doWRp5T4CB/WGkyr15WLj5+U/vq5CVwKHRi00SoVZrHeQiBtFcYmVuNATA8woS6+kLzNqOS20pAq851nbtL4zpefFoVMqdyfSi3PhfxeQvS/Yw0FZHRqpCdreU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tuEJLLh3fdvDP0GTBmeHWDicKBy+dKmNBdxGmV2FIMmdPA6uSZ02JoTGAa4p7Jz9k7wI9lB4V97XmJ7OYEcclWzmr2EXJlUYvAwDyGdXq3W3QsY1XIrf3RWG85j0RJOuWzAJpbqp3mqUZmQmObosFLwcCj00qe9bPWatcCjm7pc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a037217c7a913235a6903fa1386c9a6326d8141e8d67ce27f2bc9a4fd3d48c18" Description="" Url=""><as:assemblyIdentity name="UrduProofReaderWE.dll" version="1.0.0.1" publicKeyToken="398d8685af6fd5cb" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VORG9PC\azeemdin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Gp8yJm+0RQHebWjeabJsVoV7UP3WxzEb2bMLuyMf0xM=</DigestValue></Reference></SignedInfo><SignatureValue>giiKesQKeuYrD4kMOx/yMJqbLxHOdQG3whEup2vImlOSiZ6kouVw2HMr48gC/0ncA/ICLsC6+S4BWNeDtxhV5cl05MrCxCHiALDta8vW1eUstwzwbWEpMRI70IztKL1tWeEetED8xvuW8txMMWQQBqjMBCTHt8vApmJY+gNehcU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tuEJLLh3fdvDP0GTBmeHWDicKBy+dKmNBdxGmV2FIMmdPA6uSZ02JoTGAa4p7Jz9k7wI9lB4V97XmJ7OYEcclWzmr2EXJlUYvAwDyGdXq3W3QsY1XIrf3RWG85j0RJOuWzAJpbqp3mqUZmQmObosFLwcCj00qe9bPWatcCjm7pc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQIsBPAaP4kIdIAeolrMh4JjANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAFYATwBSAEcAOQBQAEMAXABhAHoAZQBlAG0AZABpAG4wHhcNMTcwNDIzMTQ1OTA2WhcNMTgwNDIzMjA1OTA2WjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAFYATwBSAEcAOQBQAEMAXABhAHoAZQBlAG0AZABpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALbhCSy4d33bwz9BkwZnh1g4nCgcvnSpjQXcRpldhSDJnTwOrkmdNiaExgGuKeyc/ZO8CPZQeFfe15iezmBHHJVs5q9hFyZVGLwMA8hnV6t1t0LGNVyK390VhvOY9ESTrlswCaW6qd5qlGZkJjm6LBS8HAo9NKnvWz1mrXAo5u6XAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIuistmNd6xa4CQJVStqS8MRuQ362m0D8jI+/qsAopzacLP6AcMo2DVGfjqFplmxcGOwgB+a0A4xiKNTPBkW75f30mh90Fc4MSgL/tjw9JGJ0nd6+lenseVPN3mjzmsKkaaTzyqTM0KfrGCnW5b0MU7nmMCD0TbN8I+PzlLkXatU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -73,6 +73,7 @@ namespace UrduProofReader
 
                 updateIt();
 
+                // Highlight changed text making the program slow
                 //foreach (DataRow line in TokenDataSet.Instance.sorted(uiTokenOrder.Checked).Rows)
                 //{
                 //    if (bool.Parse(line[2] + ""))
