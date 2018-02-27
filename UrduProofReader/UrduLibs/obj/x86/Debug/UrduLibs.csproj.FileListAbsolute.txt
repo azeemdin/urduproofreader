@@ -3,3 +3,8 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\bin\x86\Debug\UrduLibs.pdb
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\x86\Debug\UrduLibs.dll
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\x86\Debug\UrduLibs.pdb
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduLibs\obj\x86\Debug\UrduLibs.csprojResolveAssemblyReference.cache
+D:\Projects\urduproofreader\UrduProofReader\UrduLibs\bin\x86\Debug\UrduLibs.dll
+D:\Projects\urduproofreader\UrduProofReader\UrduLibs\bin\x86\Debug\UrduLibs.pdb
+D:\Projects\urduproofreader\UrduProofReader\UrduLibs\obj\x86\Debug\UrduLibs.dll
+D:\Projects\urduproofreader\UrduProofReader\UrduLibs\obj\x86\Debug\UrduLibs.pdb
+D:\Projects\urduproofreader\UrduProofReader\UrduLibs\obj\x86\Debug\UrduLibs.csprojResolveAssemblyReference.cache

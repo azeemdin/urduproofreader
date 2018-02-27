@@ -5,7 +5,5 @@ Telerik.WinControls.UI.dll
 TelerikCommon.dll
 UrduLibs.dll
 Interop.AcroPDFLib.dll
-Interop.RichTextLib.dll
 AxInterop.AcroPDFLib.dll
-AxInterop.RichTextLib.dll
 itextsharp.dll

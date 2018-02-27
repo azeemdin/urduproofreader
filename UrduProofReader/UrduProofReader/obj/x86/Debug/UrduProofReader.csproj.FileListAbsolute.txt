@@ -14,3 +14,17 @@ D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduP
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.exe
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.pdb
 D:\Projects\GetUrduDdata\git\UrduProofReader\UrduProofReader\bin\x86\Debug\UrduProofReader.exe.config
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\bin\x86\Debug\UrduProofReader.exe.config
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\Interop.AcroPDFLib.dll
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.csproj.ResolveComReference.cache
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.exe
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.pdb
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.csprojResolveAssemblyReference.cache
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.extra.PDFViewer.resources
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.MainForm.resources
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.Properties.Resources.resources
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.token.ManageTokens.resources
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.token.NewToken.resources
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.csproj.GenerateResource.Cache
+D:\Projects\urduproofreader\UrduProofReader\UrduProofReader\obj\x86\Debug\UrduProofReader.exe.licenses
